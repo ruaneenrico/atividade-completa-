@@ -1,0 +1,157 @@
+.supernova {
+    background-image: url("galaxia\ roxa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    display: flex;
+    min-height: 99vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+    background:  none;
+    text-align: center;
+  }
+  
+  #main > nav {
+    order: -1;
+  }
+  header, footer {
+    background: none;
+    height: 10vh;
+    
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --containerSize: 1000px; 
+    --gutter: 15px;
+  }
+  
+  /* Grid */
+  .container {
+    width: var(--containerSize);
+    display: block;
+    margin: 0 auto;
+    padding: var(--gutter);
+  }
+  .container-fluid {
+    width: 100%;
+    display: block;
+  }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .row {
+    margin-left: calc(0px - var(--gutter));
+    margin-right: calc(0px - var(--gutter));
+  }
+  
+  .col {
+    float: left;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
+  
+  .col-6 {
+    width: 50%;
+  }
+  
+  .col-1 {
+    width: 8.33333%;
+  }
+  
+  
+  /* Visual */
+  * {
+    text-align: center;
+  }
+  
+  .item {
+    background: #ddd;
+    border: 1px solid #bbb;
+    padding: 15px;
+    overflow: hidden;
+  }
+  .sidebar {
+	
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 200px;
+	color: #fff;
+}
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.sidebar li {
+	padding: 10px;
+}
+.sidebar li:hover {
+	background-color: #faf4f4;
+}
+.sidebar a {
+	color: #fff;
+	text-decoration: none;
+}
+ header, nav{
+    font-family: 'Sonsie One', Arial, Helvetica, sans-serif;
+    color: #dfec26;
+}
+h1,h2 {
+  color: rgb(243, 237, 237);
+}
+
+P{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #d1e000;
+}
+.div-video iframe{
+    width:100%;
+    padding-top: 56.25;
+    position: relative;
+}
+
+.div-video iframe{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    border-radius: 10px;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 70%;
+  margin: 0 auto;
+}
